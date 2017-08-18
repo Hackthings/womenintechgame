@@ -15,7 +15,7 @@
 
 
 <center> Name: <input id = "username" input type="text" name="fname" value= ><br>
- <center><button onclick="addImage()">Start Game</button></center>
+ <center><button onclick="firstSetting()">Start Game</button></center>
  
 <!-- <img src="lobbySS.JPG" alt="lobby" style="width:800px;height:400px;"> -->
  
@@ -28,21 +28,23 @@
  
 
 
-<!--  <script>
+ <script>
 function changeText() {
  document.getElementById("header").innerHTML = "Monday"
   document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today. Your manager assigns a coworker named Anthony to check your code even though you are his superior.";
 }
-  </script> -->
- 
- 
- <script> 
+  
+  
  function addimage() { 
           var img = document.createElement("img");
           img.src ="lobbySS.JPG"; 
           img.height = 400; 
           img.width = 800;
  }
+  
+  function firstSetting(){
+    changeText();
+    addImage();
   
 </script>
  
