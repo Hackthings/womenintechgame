@@ -24,8 +24,8 @@
 <center><h2 id = "header">Welcome!</h2></center>
  <center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.
 </p></center>
- <div id="buttons">
-  <center><button onclick="changeText(); changeButton(); document.getElementById('setting').src='lobbySS.JPG'">Fired up, ready to go?</button></center>
+ <div id="disappears">
+  <center><button onclick="hideButton()">Fired up, ready to go?</button></center>
 </div>
 
   </footer>
@@ -33,8 +33,8 @@
 
  <script type="text/javascript">
   
- function changeButton() {
-  document.getElementById("buttons").innerHTML = "<center><button onclick='firstDecision()'>Continue</button></center>";
+ function hideButton() {
+  document.getElementById("disappears").innerHTML = "";
 } 
   
  function changeText() {
@@ -145,7 +145,8 @@
 
 // This is the first part of the story.
 function firstDecision() {
- document.getElementById("textBox").innerHTML = "Do you dismiss this or go talk to your manager?";
+ document.getElementById('setting').src='lobbySS.JPG'
+  document.getElementById("textBox").innerHTML = "Do you dismiss this or go talk to your manager?";
     var decision1 = readLine("Do you dismiss this or go talk to your manager?");
     if (decision1 == "dismiss") {
         document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong ";
