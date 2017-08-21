@@ -153,7 +153,8 @@
 function firstDecision() {
  document.getElementById('setting').src='lobbySS.JPG
   document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
-   changeButtons()
+   <button id= "OptionA" onclick= "secondDecision">Dismiss</button>
+     <button id= "OptionB" onclick= "thirdDecision">Talk to boss</button>
  //     if (decision1 == "dismiss") {
 //         secondDecision()
 //    } else if (decision1 == "talk to manager") {
@@ -164,8 +165,7 @@ function firstDecision() {
         }
 }
 
-function changeButtons()
-  document.getElementById('buttons')=<button onclick= 'secondDecision()'">Dismiss</button>
+
 </script>
 </body>
 </html>
