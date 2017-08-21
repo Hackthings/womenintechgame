@@ -34,12 +34,11 @@
  <script type="text/javascript">
   
  function changeButton() {
-  document.getElementById("buttons").innerHTML = "<center><button onclick="firstDecision()">Continue</button></center>";
+  document.getElementById("buttons").innerHTML = "<center><button onclick='firstDecision()'>Continue</button></center>";
 } 
   
  function changeText() {
- document.getElementById("header").innerHTML = "Monday"
- firstDecision();
+  document.getElementById("header").innerHTML = "Monday"
 }
   
  
@@ -145,7 +144,7 @@
 
 // This is the first part of the story.
 function firstDecision() {
-document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior";
+ document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior";
     var decision1 = readLine("Do you dismiss this or go talk to your manager?");
     if (decision1 == "dismiss") {
         document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong ";
