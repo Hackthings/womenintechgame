@@ -24,7 +24,7 @@
 <center><h2 id = "header">Welcome!</h2></center>
  <center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.
 </p></center>
- <div id="disappears">
+ <div id="buttons">
   <center><button onclick="hideButton(); firstDecision()">Fired up, ready to go?</button></center>
 </div>
 
@@ -40,7 +40,7 @@
   }
   
  function hideButton() {
-  document.getElementById("disappears").innerHTML = "<button onclick='secondDecision()'>Dismiss</button>; <center><button onclick='thirdDecision()'>Talk to manager</button></center>"
+  document.getElementById("buttons").innerHTML = ""
 } 
   
  function changeText() {
@@ -153,16 +153,19 @@
 function firstDecision() {
  document.getElementById('setting').src='lobbySS.JPG
   document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
-    if (decision1 == "dismiss") {
-        secondDecision()
-   } else if (decision1 == "talk to manager") {
-        thirdDecision()
-   } else {
-        document.getElementById("textBox").innerHTML = "Error: You can only input the options given.";
-        firstDecision()
+   changeButtons()
+ //     if (decision1 == "dismiss") {
+//         secondDecision()
+//    } else if (decision1 == "talk to manager") {
+//         thirdDecision()
+//    } else {
+//         document.getElementById("textBox").innerHTML = "Error: You can only input the options given.";
+//         firstDecision()
         }
 }
 
+function changeButtons
+  document.getElementbyId('buttons') = <button onclick= "firstDecision()">Dismiss</button>
 </script>
 </body>
 </html>
