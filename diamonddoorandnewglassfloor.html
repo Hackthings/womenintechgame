@@ -24,17 +24,23 @@
 <center><h2 id = "header">Welcome!</h2></center>
  <center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.
 </p></center>
- <div id="disappears">
-  <center><button onclick="hideButton(); firstDecision()">Fired up, ready to go?</button></center>
+ <div id="buttons">
+  <center><button onclick="changeText(); changeButton(); document.getElementById('setting').src='lobbySS.JPG'">Fired up, ready to go?</button></center>
 </div>
 
   </footer>
 
 
  <script type="text/javascript">
+ 
+  function bigFunction() {
+   if (index == 1) {
+    
+   }
+  }
   
- function hideButton() {
-  document.getElementById("disappears").innerHTML = "";
+ function changeButton() {
+  document.getElementById("buttons").innerHTML = "<center><button onclick='firstDecision()'>Continue</button></center>";
 } 
   
  function changeText() {
@@ -114,7 +120,7 @@
 // }
 
 // function thirdDecision() {
-//     document.getElementById("textBox").innerHTML = "One week later, you and your team have finished presenting a project. Your team, a group of guys, decides to head out for drinks. You don’t really feel included, so you don’t go. Before leaving the room, Logan asks if you can stick around and tidy up the meeting room.";
+//     document.getElementById("textBox").innerHTML = "Your manager, Jack, says 'Anthony was the only one available and somebody’s gotta check your code!' One week later, you and your team have finished presenting a project. Your team, a group of guys, decides to head out for drinks. You don’t really feel included, so you don’t go. Before leaving the room, Logan asks if you can stick around and tidy up the meeting room.";
 //     var decision3 = readLine("Do you say it’s not your job to do or do you just agree?");
 //     if (decision3 == "say something") {
 //         document.getElementById("textBox").innerHTML = "All the guys reenter the room and stare at you. Someone mutters “Bitch.” They all reluctantly pick up their trash.While they give you looks, you tell them “You know I do the same amount of work as you, and get paid less. The least you can do is clean up after yourself.";
@@ -130,7 +136,7 @@
 
 
 // function secondDecision() {
-//     var decision2 = readLine("Do you try to keep your cool or tell him what he’s doing wrong? input "keep cool" or "tell him"");
+//     document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong, Do you try to keep your cool or tell him what he’s doing wrong? input "keep cool" or "tell him"");
 //     if (decision2 == "keep cool") {
 //         document.getElementById("textBox").innerHTML = "Anthony keeps making this mistake, resulting in time being wasted. Your manager is annoyed and your team gets a bad reputation for not getting work done.";
 //         fourthDecision()
@@ -145,14 +151,10 @@
 
 // This is the first part of the story.
 function firstDecision() {
- document.getElementById('setting').src='lobbySS.JPG'
-  document.getElementById("textBox").innerHTML = "Do you dismiss this or go talk to your manager?";
-    var decision1 = readLine("Do you dismiss this or go talk to your manager?");
+ document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
     if (decision1 == "dismiss") {
-        document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong ";
         secondDecision()
    } else if (decision1 == "talk to manager") {
-        document.getElementById("textBox").innerHTML = "Your manager, Jack, says 'Anthony was the only one available and somebody’s gotta check your code!'";
         thirdDecision()
    } else {
         document.getElementById("textBox").innerHTML = "Error: You can only input the options given.";
@@ -163,6 +165,5 @@ function firstDecision() {
 </script>
 </body>
 </html>
-
 
 
