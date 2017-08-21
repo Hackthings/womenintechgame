@@ -29,8 +29,7 @@
 </div>
 
   </footer>
-<input type="text" id="input1" />
-<button onclick="firstDecision()"></button>
+
 
  <script type="text/javascript">
   
@@ -148,7 +147,6 @@
 function firstDecision() {
 document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior";
     var decision1 = readLine("Do you dismiss this or go talk to your manager?");
-    var text=document.getElementById('input1').value;
     if (decision1 == "dismiss") {
         document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong ";
         secondDecision()
