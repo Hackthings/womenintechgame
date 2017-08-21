@@ -26,7 +26,7 @@
  <h2 id = "header">Welcome!</h2>
  <p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.
 </p>
-  <center><button onclick="changeText(); document.getElementById('setting').src='lobbySS.JPG'">Fired up, ready to go?</button></center>
+  <center><id = buttonID button onclick="hideButton(); changeText(); document.getElementById('setting').src='lobbySS.JPG'">Fired up, ready to go??</button></center>
 
 
   </footer>
@@ -37,6 +37,10 @@
  document.getElementById("header").innerHTML = "Monday"
   document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today. Your manager assigns a coworker named Anthony to check your code even though you are his superior.";
 }
+  
+  function hideButton() {
+   document.getElementById('ButtonID').style.visibility = 'hidden';
+}   
 //  function eighthDecision() {
 //   var decision8 = readLine("Do you accept the vacation days or take this up with your manager’s boss? Input 'vacation' or 'boss'");
 //   if (decision8 == "vacation") {
