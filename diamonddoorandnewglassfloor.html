@@ -48,7 +48,10 @@
    document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior."
 }
   
- 
+ function newButtons() {
+  <button id= "OptionA" onClick= "secondDecision">Dismiss</button>
+     <button id= "OptionB" onClick= "thirdDecision">Talk to boss</button>
+ }  
 //  function endGame() {
 //   document.getElementById('setting').src='seattleSkylineEnd.JPG'
 //  }
@@ -153,8 +156,7 @@
 function firstDecision() {
  document.getElementById('setting').src='lobbySS.JPG
   document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
-   <button id= "OptionA" onclick= "secondDecision">Dismiss</button>
-     <button id= "OptionB" onclick= "thirdDecision">Talk to boss</button>
+   newButtons()
  //     if (decision1 == "dismiss") {
 //         secondDecision()
 //    } else if (decision1 == "talk to manager") {
