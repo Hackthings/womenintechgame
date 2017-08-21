@@ -145,7 +145,7 @@ function secondDecision() {
 
 // This is the first part of the story.
 function firstDecision() {
-document.getElementById("textBox").innerHTML = “You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior”;
+document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior";
     var decision1 = readLine("Do you dismiss this or go talk to your manager?");
     if (decision1 == "dismiss") {
         document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong ";
@@ -153,14 +153,14 @@ document.getElementById("textBox").innerHTML = “You were working on code all w
    } else if (decision1 == "talk to manager") {
         document.getElementById("textBox").innerHTML = "Your manager, Jack, says “(player’s name), Anthony was the only one available and somebody’s gotta check your code!”;
         thirdDecision()
-     } else {
+   } else {
         document.getElementById("textBox").innerHTML = "Error: You can only input the options given.";
         firstDecision()
         }
-    }
+}
 
 
-// firstDecision()
+
  
 </script>
  
