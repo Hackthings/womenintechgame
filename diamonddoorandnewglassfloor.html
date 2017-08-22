@@ -28,9 +28,9 @@ function firstDecision() {
  function secondDecision() {
      document.getElementById("textBox").innerHTML = "Anthony finds a small error in your code and begins to mansplain to you why your code is wrong, Do you try to keep your cool or tell him what he’s doing wrong?";
       document.getElementById("OptionA").onclick= "fourthDecision()";
-       document.getElementById("OptionA").value= "Keep cool";
+       document.getElementById("OptionA").innerHTML= "Keep cool";
         document.getElementById("OptionB").onclick= "fifthDecision()";
-         document.getElementById("OptionB").value= "Tell him";
+         document.getElementById("OptionB").innerHTML= "Tell him";
 
  }
 
@@ -56,8 +56,8 @@ function firstDecision() {
 <center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.</p></center>
  <center><button type="button" onclick="firstDecision()" id="button1">Fired up, ready to go?</button></center>
  
- <button type="button" onclick="secondDecision()" id="OptionA" value= "Dismiss" style= "visibility:hidden;"></button>
- <button type="button" onclick="thirdDecision()" id="OptionB" value= "Talk to manager" style= "visibility:hidden;"></button>
+ <button type="button" onclick="secondDecision()" id="OptionA" style= "visibility:hidden;">Dismiss</button>
+ <button type="button" onclick="thirdDecision()" id="OptionB" style= "visibility:hidden;">Talk to manager</button>
  
 </footer>
 
