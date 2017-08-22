@@ -10,9 +10,11 @@
 
  
   
-//  function endGame() {
-//   document.getElementById('setting').src='seattleSkylineEnd.JPG'
-//  }
+ function endGame() {
+  document.getElementById('setting').src='seattleSkylineEnd.JPG'
+  document.getElementByID('textBox').innerHTML= "You ask Anthony about what his friends and him did in the breakroom and he responds with ‘That’s just guys being guys.’  When he says this you shoot back with ‘So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?’ Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. THE END. <a href="http://www.makers.com/blog/successful-women-tech ">Click here to learn more about successful women in tech.</a>"
+
+ }
  
 
 function firstDecision() {
@@ -48,7 +50,7 @@ function firstDecision() {
      document.getElementById("textBox").innerHTML = "Anthony keeps making this mistake, resulting in time being wasted. Your manager is annoyed and your team gets a bad reputation for not getting work done. Do you take the blame or call Anthony out?";
      document.getElementById("OptionA").innerHTML="take";
      document.getElementById("textBox").innerHTML = "You are known around the company as a pushover and you lose confidence on yourself. END.";
-     document.getElementById("OptionA").onclick=function(){endGame()};
+     document.getElementById("OptionA").onclick=function(){endGame2()};
      document.getElementById("OptionB").innerHTML="call out";
      document.getElementById("OptionB").onclick=function(){fifthDecision()};
  }
@@ -58,7 +60,7 @@ function firstDecision() {
      document.getElementById("OptionA").innerHTML="now";
      document.getElementById("OptionA").onclick=function(){seventhDecision()};
      document.getElementById("OptionB").innerHTML="later";
-     document.getElementById("OptionB").onclick=function(){endGame()}; 
+     document.getElementById("OptionB").onclick=function(){endGame1()}; 
  }
     
    
