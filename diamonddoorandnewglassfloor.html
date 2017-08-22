@@ -11,15 +11,21 @@
  
   
  function endGame1() {
-  document.getElementById('setting').src='seattleSkylineEnd.JPG'
-  document.getElementByID('textBox').innerHTML= "You ask Anthony about what his friends and him did in the breakroom and he responds with ‘That’s just guys being guys.’  When he says this you shoot back with ‘So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?’ Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. THE END. <a href="http://www.makers.com/blog/successful-women-tech ">Click here to learn more about successful women in tech.</a>"
+  document.getElementById('setting').src='seattleSkylineEnd.JPG';
+  document.getElementByID('textBox').innerHTML= "You ask Anthony about what his friends and him did in the breakroom and he responds with ‘That’s just guys being guys.’  When he says this you shoot back with ‘So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?’ Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. THE END. <a href="http://www.makers.com/blog/successful-women-tech ">Click here to learn more about successful women in tech.</a>";
 
  }
  
  function endGame2() {
-  document.getElementById('setting').src= 'seattleSkylineEnd.JPG'
-  document.getElementById("textBox").innerHTML = "You are known around the company as a pushover and you lose confidence on yourself. THE END. <a href="http://www.makers.com/blog/successful-women-tech ">Click here to learn more about successful women in tech.</a>"
+  document.getElementById('setting').src= 'seattleSkylineEnd.JPG';
+  document.getElementById("textBox").innerHTML = "You are known around the company as a pushover and you lose confidence on yourself. THE END. <a href="http://www.makers.com/blog/successful-women-tech ">Click here to learn more about successful women in tech.</a>";
+ }
  
+ function endGame3() {
+  document.getElementById('setting').src= "seattleSkylineEnd.JPG";
+  document.getElementById('textBox').innerHTML= "Your coworkers now expect you to always clean up.You’re still a valued member of the team but are seen as a secretary as well. THE END.<a href="http://www.makers.com/blog/successful-women-tech">Click here to learn more about successful women in tech.</a>";
+}
+
 
 function firstDecision() {
  document.getElementById("button1").style.visibility= "hidden";
@@ -47,7 +53,7 @@ function firstDecision() {
        document.getElementById("setting").src="meetingroom.SS.JPG"
        document.getElementById("OptionA").onclick=function(){sixthDecision()};
         document.getElementById("OptionB").innerHTML="agree";
-         document.getElementById("OptionB").onclick=function(){endGame()};
+         document.getElementById("OptionB").onclick=function(){endGame3()};
  }
  
  function fourthDecision() {
