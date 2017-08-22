@@ -8,8 +8,8 @@
 // }
   
  function newButtons() {
-  document.getElementById('OptionA')= "<button type="button" onclick="secondDecision()">Dismiss</button>";
-  document.getElementById('OptionB')= "<button type="button" onclick="thirdDecision()">Talk to manager</button>";
+  document.getElementById('OptionA')= "<button onclick="secondDecision()">Dismiss</button>";
+  document.getElementById('OptionB')= "<button onclick="thirdDecision()">Talk to manager</button>";
  }  
  
   
@@ -24,7 +24,7 @@ function firstDecision() {
    document.getElementById('setting').src= 'lobbySS.JPG';
     document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
      newButtons();
- }
+}
 
 
 </script>
