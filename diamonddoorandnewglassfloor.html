@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
-<script type="text/javascript">
+
+<style>
+
+ footer {
+    color: black;
+    background-color: Bisque;
+    clear: left;
+    text-align: center;
+    bottom: 0px;
+}
+</style>
+<body>
+   
+<center><img id = "setting" src="seattleSkylineF.JPG" style="width:800px;height:400px;"></center>
+
+<footer>
+<center><h2 id = "header">Welcome!</h2></center>
+<center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.</p></center>
+ <center><button type="button" onclick="firstDecision()" id="button1">Fired up, ready to go?</button></center>
+ 
+ <button type="button" onclick="secondDecision()" id="OptionA" style= "visibility:hidden;">Dismiss</button>
+ <button type="button" onclick="thirdDecision()" id="OptionB" style= "visibility:hidden;">Talk to manager</button>
+ 
+</footer>
+
+ <script type="text/javascript">
  
 //  function changeText() {
 //   document.getElementById("header").innerHTML = "Monday"
@@ -102,29 +127,6 @@ function eighthDecision() {
 
 
 </script>
-<style>
-
- footer {
-    color: black;
-    background-color: Bisque;
-    clear: left;
-    text-align: center;
-    bottom: 0px;
-}
-</style>
-<body>
-   
-<center><img id = "setting" src="seattleSkylineF.JPG" style="width:800px;height:400px;"></center>
-
-<footer>
-<center><h2 id = "header">Welcome!</h2></center>
-<center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.</p></center>
- <center><button type="button" onclick="firstDecision()" id="button1">Fired up, ready to go?</button></center>
- 
- <button type="button" onclick="secondDecision()" id="OptionA" style= "visibility:hidden;">Dismiss</button>
- <button type="button" onclick="thirdDecision()" id="OptionB" style= "visibility:hidden;">Talk to manager</button>
- 
-</footer>
 
 
  
