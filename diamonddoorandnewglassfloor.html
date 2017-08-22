@@ -23,8 +23,10 @@
  <center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.
 </p></center>
  <div id="buttons">
- <center><button onclick="hideButton()"> Fired up, ready to go? </button></center>
+ <center><button onclick="hideButton(); firstDecision()"> Fired up, ready to go? </button></center>
 </div>
+ <div id= "OptionA"></div>
+ <div id= "OptionB"></div>
 
 </footer>
 
@@ -38,9 +40,8 @@
 //   }
   
  function hideButton() {
-  document.getElementById("buttons").innerHTML = "";
-   <input id= 'OptionA' input type='button' value='Dismiss' onclick= 'secondDecision()'>;
-    <input id= 'OptionB' input type='button' value='Talk to manager' onclick= 'thirdDecision()'>;
+  document.getElementById("buttons").innerHTML = ""
+  
 } 
   
 //  function changeText() {
@@ -48,10 +49,10 @@
 //    document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior."
 // }
   
-//  function newButtons() {
-//  <input id= "OptionA" input type="button" value="Dismiss" onclick= "secondDecision()">;
-//    <input id= "OptionB" input type="button" value="Talk to manager" onclick= "thirdDecision()">;
-//  }  
+ function newButtons() {
+  getElementById('OptionA')= <input type="button" value="Dismiss" onclick= "secondDecision()">;
+   getElemenyById('OptionB')= <input type="button" value="Talk to manager" onclick= "thirdDecision()">;
+ }  
  // <button type="button" onclick="myFunction()" id="1">Button1</button>
  // <button type="button" onclick="myFunction()" id="2">Button1</button>
  // <button type="button" onclick="myFunction()" id="3">Button1</button>
@@ -158,10 +159,10 @@
 
 // This is the first part of the story.
 function firstDecision() {
- document.getElementById("header").innerHTML = "Monday";
-  document.getElementById('setting').src= 'lobbySS.JPG'";
-   document.getElementById("textBox").innerHTML= "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
-//     newButtons();
+ document.getElementById("header").innerHTML = "Monday"
+  document.getElementById('setting').src= 'lobbySS.JPG'"
+   document.getElementById("textBox").innerHTML= "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?"
+    newButtons();
  //     if (decision1 == "dismiss") {
 //         secondDecision()
 //    } else if (decision1 == "talk to manager") {
