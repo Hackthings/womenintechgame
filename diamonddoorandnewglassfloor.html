@@ -37,48 +37,48 @@
   
  function endGame1() {
   document.getElementById('setting').src='seattleSkylineEnd.JPG';
-  document.getElementById('textBox').innerHTML= "You ask Anthony about what his friends and him did in the breakroom and he responds with ‘That’s just guys being guys.’  When he says this you shoot back with ‘So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?’ Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. THE END. To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
+  document.getElementById('textBox').innerHTML= "You ask Anthony about what his friends and him did in the breakroom and he responds with ‘That’s just guys being guys.’  When he says this you shoot back with ‘So do you also think that that guy at Google was just being a guy when he sent out that memo degrading women?’ Your manager’s boss, a woman named Hillary, walks in and hears you. She pulls you aside after you talk to Anthony and says she was glad you brought up the Google issue and how the memo was wrong in its statements about women. She says that the two of you should put on a seminar at the company on how to treat women in the workplace to eliminate sexism. Congratulations! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
  }
  
  function endGame2() {
   document.getElementById('setting').src= 'seattleSkylineEnd.JPG';
-  document.getElementById("textBox").innerHTML = "You are known around the company as a pushover and you lose confidence on yourself. THE END.";
+  document.getElementById("textBox").innerHTML = "You are known around the company as a pushover and you lose confidence in yourself. This doesn't have to happen to you! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
  }
  
  function endGame3() {
   document.getElementById('setting').src= "seattleSkylineEnd.JPG";
-  document.getElementById('textBox').innerHTML= "Your coworkers now expect you to always clean up.You’re still a valued member of the team but are seen as a secretary as well. THE END.";
+  document.getElementById('textBox').innerHTML= "Your coworkers now expect you to always clean up. You’re still a valued member of the team but are seen as a secretary as well. This doesn't have to happen to you! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
  }
 
 function endGame4() {
-  document.getElementById("textBox").innerHTML = "Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing.  Your manager proceeds to mansplain the situation to you. You find your manager’s behavior rude and call him out on his mansplaining. THE END";
+  document.getElementById("textBox").innerHTML = "Your manager talks to the men, but it doesn’t really make a difference. The men keep doing the same thing.  Your manager proceeds to mansplain the situation to you. You find your manager’s behavior rude and call him out on his mansplaining. Later, your boss notices your hard work and gives you a bonus. Congratulations! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
   document.getElementById('setting').src= "seattleSkylineEnd.JPG";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
 }
 
 function endGame5() {
-  document.getElementById("textBox").innerHTML = "Because you made a face, you have a bad reputation among colleagues for acting immature. You make a batch of cookies to apologize to Anthony and his friends. After that, you also try very hard to be super nice to everyone. You’re still a valued member of the team but are seen as a secretary as well. THE END.";
+  document.getElementById("textBox").innerHTML = "Because you made a face, you have a bad reputation among colleagues for acting immature. You make a batch of cookies to apologize to Anthony and his friends. After that, you also try very hard to be super nice to everyone. You’re still a valued member of the team but are seen as a secretary as well. This doesn't have to happen to you! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech ";
   document.getElementById('setting').src= "seattleSkylineEnd.JPG";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
 }
 
 function endGame6() {
-  document.getElementById("textBox").innerHTML = "You accept the extra vacation and use them to go to Hawaii. When you get back from your vacation, you realize you haven’t made any positive change in your work life as you had hoped. You realize you need to be more assertive. THE END.";
+  document.getElementById("textBox").innerHTML = "You accept the extra vacation and use them to go to Hawaii. When you get back from your vacation, you realize you haven’t made any positive change in your work life as you had hoped. You realize you need to be more assertive. Good luck on this! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
   document.getElementById('setting').src= "seattleSkylineEnd.JPG";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
 }
 
 function endGame7() {
-  document.getElementById("textBox").innerHTML ="Your manager’s boss is a woman named Hillary, and she gives you a pay raise. This is not just because she feels bad for you, but because she honestly believes that you deserve it. THE END.";
+  document.getElementById("textBox").innerHTML ="Your manager’s boss is a woman named Hillary, and she gives you a pay raise. This is not just because she feels bad for you, but because she honestly believes that you deserve it. Congratulations! To learn more about successful women in tech, copy and paste this link: http://www.makers.com/blog/successful-women-tech";
   document.getElementById('setting').src= "seattleSkylineEnd.JPG";
   document.getElementById("OptionA").style.visibility = "hidden";
   document.getElementById("OptionB").style.visibility = "hidden";
@@ -153,7 +153,7 @@ function firstDecision() {
 function eighthDecision() {
      document.getElementById("textBox").innerHTML = "You realize you deserve more for all the work you do and talk to your manager about wage gap you are facing. Your manager says he can’t give you a raise at the moment. Instead, he offers you extra vacation days. Do you accept the vacation days or take this up with your manager’s boss?";
      document.getElementById("setting").src="meetingroomJustBossSS.JPG";
-     document.getElementById("OptionA").innerHTML="Tale vacation";
+     document.getElementById("OptionA").innerHTML="Take vacation";
      document.getElementById("OptionA").onclick=function(){endGame6()};
      document.getElementById("OptionB").innerHTML="Go to manager's boss";
      document.getElementById("OptionB").onclick=function(){endGame7()};
