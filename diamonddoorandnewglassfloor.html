@@ -38,7 +38,8 @@
 //   }
   
  function hideButton() {
-  document.getElementById("buttons").innerHTML = ""
+  document.getElementById("buttons").innerHTML = "<input id= 'OptionA' input type='button' value= 'Dismiss' onclick= 'secondDecision()'>
+  <input id= 'OptionB' input type='button' value='Talk to manager' onclick= 'thirdDecision()'>";
 } 
   
 //  function changeText() {
@@ -159,7 +160,7 @@ function firstDecision() {
  document.getElementById("header").innerHTML = "Monday";
   document.getElementById('setting').src= 'lobbySS.JPG'";
    document.getElementById("textBox").innerHTML= "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
-    newButtons();
+//     newButtons();
  //     if (decision1 == "dismiss") {
 //         secondDecision()
 //    } else if (decision1 == "talk to manager") {
