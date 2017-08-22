@@ -7,10 +7,7 @@
 //    document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior."
 // }
   
- function newButtons() {
-  document.getElementById('OptionA')= "<button onclick="secondDecision()">Dismiss</button>";
-  document.getElementById('OptionB')= "<button onclick="thirdDecision()">Talk to manager</button>";
- }  
+
  
   
 //  function endGame() {
@@ -23,7 +20,9 @@ function firstDecision() {
   document.getElementById("header").innerHTML = "Monday";
    document.getElementById('setting').src= 'lobbySS.JPG';
     document.getElementById("textBox").innerHTML = "You were working on code all weekend because it had to be finished by today, Monday. Your manager assigns a coworker named Anthony to check your code even though you are his superior. Do you dismiss this or go talk to your manager?";
-     newButtons();
+      document.getElementById("OptionA").style.visibility = "hidden";
+        document.getElementById("OptionA").style.visibility = "hidden";
+     
 }
 
 
@@ -46,11 +45,10 @@ function firstDecision() {
 <footer>
 <center><h2 id = "header">Welcome!</h2></center>
 <center><p id = "textBox">You have been working at TechCorp for a while. Although you love your job, you and the other few ladies on your floor have noticed some issues and are upset. You have decided to try to change your old habits and make a stand against these problems. Even with this mindset, the issues that you run into are hard to navigate.</p></center>
- <div id="buttons">
- <center><button type= "button" onclick="firstDecision()">Fired up, ready to go?</button></center>
-</div>
- <div id= "OptionA"></div>
- <div id= "OptionB"></div>
+ <center><button type="button" onclick="firstDecision()" id="button1">Fired up, ready to go?</button></center>
+ 
+ <button type="button" onclick="secondDecision()" id="OptionA" style= "visibility:hidden;">Dismiss</button>
+ <button type="button" onclick="thirdDecision()" id="OptionB" style= "visibility:hidden;">Talk to manager</button>
  
 </footer>
 
