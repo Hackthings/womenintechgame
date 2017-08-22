@@ -37,9 +37,9 @@ function firstDecision() {
  function thirdDecision() {
      document.getElementById("textBox").innerHTML ="Your manager, Jack, says 'Anthony was the only one available and somebody’s gotta check your code!' One week later, you and your team have finished presenting a project. Your team, a group of guys, decides to head out for drinks. You don’t really feel included, so you don’t go. Before leaving the room, Logan asks if you can stick around and tidy up the meeting room. Do you say it’s not your job to do or do you just agree?";
      document.getElementById("OptionA").innerHTML="say something";
-     document.getElementById("OptionA").onclick="sixthDecision()";
+     document.getElementById("OptionA").onclick=function(){sixthDecision()};
      document.getElementById("OptionB").innerHTML="agree";
-     document.getElementById("OptionB").onclick="endGame()";
+     document.getElementById("OptionB").onclick=function(){endGame()};
  }
 
 
